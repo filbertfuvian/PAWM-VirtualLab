@@ -19,15 +19,57 @@
     <header>
         <h1>Welcome to Virual Lab</h1>
         <p>Explore the mogusness of the mogus</p>
-        <br>
-        <form>
-            <input type="search" id="search-main" name="search">
+        <form id="course-form" onsubmit="validateCourse()">
+            <input 
+                class="search-bar" 
+                list="courses" 
+                id="course" 
+                name="course" 
+                placeholder="Search Course" 
+            >
+            <datalist id="courses">
+                <option value="Matematika"></option>
+                <option value="Fisika"></option>
+                <option value="Kimia"></option>
+                <option value="Berpikir Komputational"></option>
+                <option value="Literasi Digital dan AI"></option>
+                <option value="Olahraga"></option>
+                <option value="Bahasa Inggris"></option>
+                <option value="Bahasa Indonesia"></option>
+            </datalist>
         </form>
     </header>
-    <nav>
 
-    </nav>
     <main>
+        <section class="container1">
+            <img src="download.jpeg" alt="Course Image">
+            <div class="text">
+                <h2>Featured Courses</h2>
+                <p>Discover top courses to enhance your learning</p>
+                <button>View All Courses</button>
+            </div>
+        </section>
+
+
+        <section class="container2">
+            <div class="cards">
+                <img src="pexels-charlesdeluvio-1851164.jpg" alt="Course Image">
+                <p>Mathematics</p>
+                <button>Explore</button>
+            </div>
+            <div class="cards">
+                <img src="pexels-pixabay-220938.jpg" alt= "Course Image">
+                <p>Mathematics</p>
+                <button>Explore</button>
+            </div>
+            <div class="cards">
+                <img src="pexels-charlesdeluvio-1851164.jpg" alt="Course Image">
+                <p>Mathematics</p>
+                <button>Explore</button>
+            </div>
+        </section>
+        <hr>
+        
 
     </main>
 
