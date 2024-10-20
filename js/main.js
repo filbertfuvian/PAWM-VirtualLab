@@ -7,6 +7,7 @@ function validateCourse() {
         "Berpikir Komputational",
         "Literasi Digital dan AI",
         "Olahraga",
+        "Pancasila"
         "Bahasa Inggris",
         "Bahasa Indonesia"
     ];
@@ -17,3 +18,4 @@ function validateCourse() {
     }
     return true; // Allow form submission
 }
+
