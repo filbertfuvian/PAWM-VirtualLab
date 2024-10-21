@@ -3,14 +3,39 @@ body {
     background-color: #fff;
 }
 
-
-
 main{
     margin-left : 140px;
     margin-right: 140px;
 }
-.container {
+
+.navigate {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+.navigate label{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.navigate ul{     
+    font-size: large;  
+    flex-flow: wrap;
+}
+
+.navigate li:hover{
+    transform: scale(0.95);
+}
+
+.course{
     min-height: 850px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
     display: flex;
     justify-content: flex-start;
     gap: 40px;
@@ -20,10 +45,22 @@ main{
     margin-top: 26px;
     width: 156px;
     height: 156px;
+    margin-bottom : 25px
 }
 
 .container text{
     flex-direction: column;
+}
+
+.container button{
+    font-size: larger ;
+    color: white;
+    background-color: #5178f8;
+}
+
+.container button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 header {
@@ -45,11 +82,15 @@ nav {
     align-items: center;
 }
 
-a{  
+nav a{  
     align-items: center;
     text-decoration: none;
-    color: #440caa;
+    color: #000000;
     padding: 10px;
     font-weight: bold;
     margin-right: 40px;
+}
+
+nav a:hover{
+    color: #440caa;
 }

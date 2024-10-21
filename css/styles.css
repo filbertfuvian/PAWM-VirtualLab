@@ -114,7 +114,10 @@ p{
     transition: transform 0.3s ease;
     flex-direction: column;
 }
-
+.card button{
+    border-width: 0;
+    background-color: white;
+}
 .card img{
     width: 340px;
     height: 340px;
