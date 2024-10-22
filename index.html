@@ -7,37 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Tugas PAWM Virtual Lab">
     <meta name="author" content="Filbert Fuvian">
-    <title>VLab Amogus</title>
+    <title>VLab</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js"></script>
 
 </head>
 <body>
     <header>
-        <h1>Welcome to Virtual Lab</h1>
-        <p>Explore the mogusness of the mogus</p>
-        <form onsubmit="return navigateToCourse()">
-            <input 
-                class="search-bar" 
-                list="courses" 
-                id="course" 
-                name="course" 
-                placeholder="Search Course" 
-            >
-            <datalist id="courses">
-                <option value="Matematika"></option>
-                <option value="Fisika"></option>
-                <option value="Kimia"></option>
-                <option value="Berpikir Komputational"></option>
-                <option value="Literasi Digital dan AI"></option>
-                <option value="Olahraga"></option>
-                <option value="Pancasila"></option>
-                <option value="Bahasa Inggris"></option>
-                <option value="Bahasa Indonesia"></option>
-            </datalist>
-        </form>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About Me</a>
+            
+        </nav>
+        <section class="search">
+            <h1>Welcome to Virtual Lab</h1>
+            <p>Explore Available Courses in TPB</p>
+            <form onsubmit="return navigateToCourse()">
+                <input 
+                    class="search-bar" 
+                    list="courses" 
+                    id="course" 
+                    name="course" 
+                    placeholder="Search Course" 
+                >
+                <datalist id="courses">
+                    <option value="Matematika"></option>
+                    <option value="Fisika"></option>
+                    <option value="Kimia"></option>
+                    <option value="Berpikir Komputational"></option>
+                    <option value="Literasi Digital dan AI"></option>
+                    <option value="Olahraga"></option>
+                    <option value="Pancasila"></option>
+                    <option value="Bahasa Inggris"></option>
+                    <option value="Bahasa Indonesia"></option>
+                </datalist>
+            </form>
+        </section>
     </header>
-
     <main>
         <section class="container1">
             <img src="assets/Institut_Teknologi_Bandung_logo.svg.png" alt="Course Image">
