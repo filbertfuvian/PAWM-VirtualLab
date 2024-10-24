@@ -110,3 +110,125 @@ iframe {
 .buttons button:active {
     background-color: #948d8d;
 }
+
+
+.kuis {
+    max-width: 720px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.kuis input{
+    font-size: large;
+}
+.kuis button {
+    background-color: #5178f8;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.kuis button:hover {
+    background-color: #4167d8;
+}
+
+.question {
+    margin: 15px 0;
+    font-size: x-large;
+}
+
+.result {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    main {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    header h1 {
+        font-size: 28px; 
+    }
+
+    nav {
+        font-size: 20px; 
+    }
+
+    iframe {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .calculator {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 24px; 
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    nav a {
+        margin-right: 0;
+        margin-bottom: 10px;
+
+    main {
+        padding: 10px;
+    }
+
+    iframe {
+        height: 400px; 
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px; 
+    }
+
+    .buttons {
+        grid-template-columns: repeat(5s, 1fr); 
+    }
+
+    iframe {
+        height: 300px; 
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 18px; 
+    }
+
+    .buttons {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+
+    .display {
+        font-size: 18px; 
+    }
+
+    .buttons button {
+        height: 60px; 
+        font-size: 16px; 
+    }
+
+    iframe {
+        height: 200px; 
+    }
+}
+

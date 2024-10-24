@@ -4,7 +4,7 @@ let previousInput = '';
 
 function inputNumber(number) {
     if (currentInput === ''){
-        if (number === '3.14'){
+        if (number === '3.1415'){
             currentInput = number;
             updateDisplay('π')
         }
@@ -13,11 +13,11 @@ function inputNumber(number) {
             updateDisplay(currentInput);
         }
     }
-    else if(currentInput === '3.14'){
+    else if(currentInput === '3.1415'){
         updateDisplay('π');
     }
     else{
-        if (number === '3.14'){
+        if (number === '3.1415'){
             alert("π tidak bisa di input")
             updateDisplay(currentInput);
         }
