@@ -3,18 +3,32 @@ body {
     background-color: #fff;
 }
 
+main {
+    padding: 20px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
 header {
     background-color: #fff;
 
+}
+h1{
+    font: bold;
+    font-size: 40px;
+}
 
+p{
+    font-size: 16px;
 }
 nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 60px;
-    background-color: lightblue;
+    background-color: rgb(83, 105, 138);
 }
+
 nav a{  
     font-size: x-large;
     text-decoration: none;
@@ -22,7 +36,6 @@ nav a{
     padding: 20px;
     font-weight: bold;
     margin-right: 40px;
-
 }
 
 nav a:hover{
@@ -30,15 +43,8 @@ nav a:hover{
     color: purple;
 }
 
-.search{
-    background-color: #648BF4;
-    color: white;
-    padding-top:60px;
-    padding-bottom:60px;
-    text-align: center;
 
-}
-.container1 {
+.container {
     margin-top: 60px;
     display: flex;
     justify-content: flex-start;
@@ -47,11 +53,18 @@ nav a:hover{
   }
 
 
-.container1 img{
+.container img{
     width: 180px;
     height: 180px;
 }
-
+.container button{
+    width: auto;
+    height: 28px;
+}
+.container1 button:hover{
+    transform: scale(1.1);
+    cursor:pointer
+}
 .text {
     flex-direction: column;
     align-items: flex-start;
@@ -72,22 +85,6 @@ button{
     background-color:black
 }
 
-.container1 button{
-    width: auto;
-    height: 28px;
-}
-
-.container1 button:hover{
-    transform: scale(1.1);
-    cursor:pointer
-}
-
-main {
-    padding: 20px;
-    margin-left: 140px;
-    margin-right: 140px;
-}
-
 footer {
     background-color: #333;
     color: white;
@@ -97,37 +94,30 @@ footer {
     width: 100%;
 }
 
+.search{
+    background-color: #648BF4;
+    color: white;
+    padding-top:60px;
+    padding-bottom:60px;
+    text-align: center;
 
-h1{
-    font: bold;
-    font-size: 40px;
 }
-
-p{
-    font-size: 16px;
-}
-
 .search-bar{
     width: 360px;
     height: 36px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: center;
     border-radius: 30px;
 }
-
-
 
 .cards-bar {
     width: 100%;
     overflow-x: auto;
     padding: 20px;
 }
-
 .cards-container {
     display: flex;
     gap: 90px;
 }
-
 .card {
     min-width: 340px;
     height: 340px;
@@ -148,7 +138,6 @@ p{
     width: 340px;
     height: 340px;
 }
-
 .card:hover {
     transform: scale(1.05); 
 }

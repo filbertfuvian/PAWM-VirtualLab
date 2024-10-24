@@ -11,8 +11,7 @@
     <title>Bahasa</title>
 
     <link rel="stylesheet" href="pagestyles.css">
-
-    <script type="text/javascript" src="../js/index.js"></script>
+    <script src="../js/pagescript.js"></script>
 
 </head>
 
@@ -20,31 +19,48 @@
     <header>
         <h1>Bahasa Indonesia TPB</h1>
         <nav>
-            <a href="../index.html">HOME</a>
-            <a href="#feature1">Fitur 1</a>
-            <a href="#feature2">Fitur 2</a>
-            <a href="#feature3">Fitur 3</a>
-            <a href="#">Fitur 4</a>
+            <a href="../index.html">Home</a>
+            <a href="../courses.html">Courses</a>
+            <a href="#video-pembelajaran">Video Pembelajaran</a>
+            <a href="#materi-pembelajaran">Materi Pembelajaran</a>
         </nav>
     </header>
     <main>
-        <section id="feature1">
-            <h1>Fitur 1</h1>
-            <p>Ini adalah  fitur 1 bla bla  bla bla</p>
+        <section class="feature" id="video-pembelajaran">
+            <h1>Video Pembelajaran</h1>
+            <form>
+                <label for="video-materi">Pilih materi</label>
+                <select name="materibahasa" id="video-materi" onchange="displayVideo()">
+                    <option value="">-- Pilih Materi --</option>
+                    <option value="1">Materi 1 - Bahasa</option>
+                    <option value="2">Materi 2 - Bahasa</option>
+                    <option value="3">Materi 3 - Bahasa</option>
+                </select>
+            </form>
+
+            <div id="video-container">
+                <h3>Video Pembelajaran:</h3>
+                <iframe id="video" src="" allowfullscreen></iframe>
+            </div>
         </section>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <section id="feature2">
-            <h1>Fitur 2</h1>
-            <p>Ini adalah  fitur 2 bla bla  bla bla</p>
-        </section>
+        <section class="feature" id="materi-pembelajaran">
+            <h1>Materi Pembelajaran</h1>
+            <form>
+                <label for="dokumen-materi">Pilih materi</label>
+                <select name="materibahasa" id="dokumen-materi" onchange="displayDokumen()">
+                    <option value="">-- Pilih Materi --</option>
+                    <option value="1">Materi 1 - Bahasa</option>
+                    <option value="2">Materi 2 - Bahasa</option>
+                    <option value="3">Materi 3 - Bahasa</option>
+                </select>
+            </form>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        <section id="feature3">
-            <h1>Fitur 3</h1>
-            <p>Ini adalah  fitur 3 bla bla  bla bla</p>
+            <div id="dokumen-container">
+                <h3>Materi Pembelajaran:</h3>
+                <iframe id="dokumen" src="" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
 </body> 

@@ -11,8 +11,8 @@
     <title>Physics</title>
 
     <link rel="stylesheet" href="pagestyles.css">
-
-    <script type="text/javascript" src="../js/index.js"></script>
+    <script src="../js/pagescript.js"></script>
+    <script src="../js/calculator.js"></script>
 
 </head>
 
@@ -20,31 +20,83 @@
     <header>
         <h1>Fisika TPB</h1>
         <nav>
-            <a href="../index.html">HOME</a>
-            <a href="#feature1">Fitur 1</a>
-            <a href="#feature2">Fitur 2</a>
-            <a href="#feature3">Fitur 3</a>
-            <a href="#">Fitur 4</a>
+            <a href="../index.html">Home</a>
+            <a href="../courses.html">Courses</a>
+            <a href="#video-pembelajaran">Video Pembelajaran</a>
+            <a href="#materi-pembelajaran">Materi Pembelajaran</a>
+            <a href="#calculator">Calculator</a>
         </nav>
     </header>
     <main>
-        <section id="feature1">
-            <h1>Fitur 1</h1>
-            <p>Ini adalah  fitur 1 bla bla  bla bla</p>
+        <section class="feature" id="video-pembelajaran">
+            <h1>Video Pembelajaran</h1>
+            <form>
+                <label for="video-materi">Pilih materi</label>
+                <select name="materifisika" id="video-materi" onchange="displayVideo()">
+                    <option value="">-- Pilih Materi --</option>
+                    <option value="1">Materi 1 - Fisika</option>
+                    <option value="2">Materi 2 - Fisika</option>
+                    <option value="3">Materi 3 - Fisika</option>
+                </select>
+            </form>
+
+            <div id="video-container">
+                <h3>Video Pembelajaran:</h3>
+                <iframe id="video" src="" allowfullscreen></iframe>
+            </div>
         </section>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <section id="feature2">
-            <h1>Fitur 2</h1>
-            <p>Ini adalah  fitur 2 bla bla  bla bla</p>
+        <section class="feature" id="materi-pembelajaran">
+            <h1>Materi Pembelajaran</h1>
+            <form>
+                <label for="dokumen-materi">Pilih materi</label>
+                <select name="materifisika" id="dokumen-materi" onchange="displayDokumen()">
+                    <option value="">-- Pilih Materi --</option>
+                    <option value="1">Materi 1 - Fisika</option>
+                    <option value="2">Materi 2 - Fisika</option>
+                    <option value="3">Materi 3 - Fisika</option>
+                </select>
+            </form>
+
+            <div id="dokumen-container">
+                <h3>Materi Pembelajaran:</h3>
+                <iframe id="dokumen" src="" allowfullscreen></iframe>
+            </div>
         </section>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <section id="feature3">
-            <h1>Fitur 3</h1>
-            <p>Ini adalah  fitur 3 bla bla  bla bla</p>
+        <section class="feature" id="calculator">
+            <h1>Kalkulator sederhana</h1>
+            <p>Kalkulator dapat melakukan operasi dengan satu operator</p>
+            <div class=calculator>
+                <input type="text" id="display" class="display" disabled>
+                <div class="buttons">
+                    <button onclick="inputNumber('3.1415')">π</button>
+                    <button onclick="inputNumber('7')">7</button>
+                    <button onclick="inputNumber('8')">8</button>
+                    <button onclick="inputNumber('9')">9</button>
+                    <button onclick="inputOperator('/')">/</button>
+
+                    <button onclick="inputOperator('^')">^</button>
+                    <button onclick="inputNumber('4')">4</button>
+                    <button onclick="inputNumber('5')">5</button>
+                    <button onclick="inputNumber('6')">6</button>
+                    <button onclick="inputOperator('*')">*</button>
+
+                    <button onclick="inputOperator('%')">%</button>
+                    <button onclick="inputNumber('1')">1</button>
+                    <button onclick="inputNumber('2')">2</button>
+                    <button onclick="inputNumber('3')">3</button>
+                    <button onclick="inputOperator('-')">-</button>
+
+                    <button onclick="inputOperator('log')">log</button>
+                    <button onclick="inputNumber('0')">0</button>
+                    <button onclick="clearDisplay()">C</button>
+                    <button onclick="calculate()">=</button>
+                    <button onclick="inputOperator('+')">+</button>         
+                </div>
+            </div>
         </section>
     </main>
 </body> 

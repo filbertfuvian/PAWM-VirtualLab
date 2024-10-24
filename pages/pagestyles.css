@@ -18,7 +18,7 @@ header h1{
 }
 
 nav {
-    font-size: 28px;
+    font-size: 22px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,7 +29,7 @@ a{
     color: #333;
     padding: 10px;
     font-weight: bold;
-    margin-right: 40px;
+    margin-right: 22px;
 }
 
 nav a:hover{
@@ -52,4 +52,61 @@ p{
 
 .feature{
     min-height: 850px;
+}
+
+.video-container {
+    margin-top: 20px;
+    display: none; /* Default: tersembunyi hingga opsi dipilih */
+}
+.video-pembelajaran label{
+    font-size: large;
+}
+select{
+    font-size: large;
+}
+iframe {
+    width: 1024px;
+    height: 576px;
+    background-color: #3f3d3d;
+}
+
+.calculator { 
+    width: 640px;
+}
+
+.display {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color:rgb(39, 38, 38) ;
+    background-color: white;
+    color: rgb(39, 38, 38) ;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}   
+
+.buttons button{
+    height: 80px;
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3f3d3d;
+    color: white;
+}
+
+.buttons button:hover {
+    background-color: #5f5a5a;
+}
+
+.buttons button:active {
+    background-color: #948d8d;
 }
